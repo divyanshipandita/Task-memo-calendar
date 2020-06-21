@@ -1,10 +1,10 @@
-import React, { Component, useReducer } from 'react';
+import React, { Component } from 'react';
 import './App.scss';
 import LoginPage from './screens/LoginPage';
 import RegisterPage from './screens/RegisterPage';
 import LandingPage from './screens/LandingPage';
 import {
-   BrowserRouter as Router, Switch, Route, Link, Redirect
+   Switch, Route, Redirect
 } from "react-router-dom";
 import fire from '../src/config/fire';
 import { UserContext } from "./config/context";

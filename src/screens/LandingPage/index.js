@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-import {
-   BrowserRouter as Router,
-   Switch,
-   Route,
-   Link
-} from "react-router-dom";
 import fire from '../../config/fire';
 import CreateTask from './CreateTask';
 import TaskList from './TaskList';

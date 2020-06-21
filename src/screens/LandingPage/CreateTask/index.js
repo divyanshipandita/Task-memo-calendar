@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import {
-   BrowserRouter as Router,
-   Switch,
-   Route,
-   Link
-} from "react-router-dom";
 import { UserContext } from "../../../config/context";
 import fire from '../../../config/fire';
-import { pad, getNow } from '../../../utils';
+import { getNow } from '../../../utils';
 export class Task {
    constructor({ id, taskname, projectname, sDate, eDate, isTimer, createdOn, updatedOn, userId }) {
       this.id = id;
@@ -136,7 +130,7 @@ export default class createTask extends Component {
                <div className="body">
                   <form className="vr full" onSubmit={(e) => this.createTask(e)
                      // this.googleCalender()
-                     } onChange={(e) => this.handleChange(e)}>
+                  } onChange={(e) => this.handleChange(e)}>
                      <label>
                         Topic:
                      </label>
@@ -172,7 +166,7 @@ export default class createTask extends Component {
                            </React.Fragment>
                         )
                      }
-                     <button type='submit' 
+                     <button type='submit'
                      // onClick={this.googleCalender()}
                      >Schedule</button>
                   </form>

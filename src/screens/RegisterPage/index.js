@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import fire from '../../config/fire';
 import {
-   BrowserRouter as Router,
-   Switch,
-   Route,
-   Link,
    Redirect
 } from "react-router-dom";
 

@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import fire from '../../../config/fire';
-import { pad, getNow } from '../../../utils';
+import { pad } from '../../../utils';
 import { UserContext } from '../../../config/context';
-import { Task } from '../CreateTask';
 export default class TaskList extends Component {
   static contextType = UserContext;
   todaysDate = (() => {
