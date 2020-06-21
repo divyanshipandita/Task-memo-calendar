@@ -4,7 +4,7 @@ import CreateTask from './CreateTask';
 import TaskList from './TaskList';
 import { UserContext } from '../../config/context';
 import { Timer } from '../../utils';
-import { pad, getNow } from '../../utils';
+import { getNow } from '../../utils';
 
 export default class LandingPage extends Component {
    static contextType = UserContext;
@@ -63,7 +63,7 @@ export default class LandingPage extends Component {
    }
    render() {
       const { user = {} } = this.context;
-      const { editTask, liveTasks } = this.state;
+      const { editTask } = this.state;
 
       return (
 
