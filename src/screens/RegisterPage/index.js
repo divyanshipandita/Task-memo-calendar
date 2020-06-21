@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import fire from '../../config/fire';
 import {
-   Redirect
+   Redirect, Link
 } from "react-router-dom";
 
 
